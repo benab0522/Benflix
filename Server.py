@@ -146,7 +146,7 @@ class Server:
                         else:
                             client_socket.send(error)
 
-                elif function == "PLAY":
+                """ elif function == "PLAY":
                     capture = cv2.VideoCapture("movies\\avengers_iw.mp4")
 
                     while True:
@@ -155,7 +155,7 @@ class Server:
                         print data
                         sock.sendall("PLAY \r\n" + data)
                         time.sleep(2)
-                    print "1"
+                    print "1" """
 
 
 def get_usernames(data_base):
