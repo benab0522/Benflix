@@ -4,10 +4,6 @@ import threading
 import os
 import hashlib
 
-
-
-
-
 class Server:
 
     def __init__(self, host, port):
