@@ -3,18 +3,9 @@ import socket
 import threading
 import os
 import hashlib
-import cv2
-import time
-import sys
-import pickle
-import struct
 
-"""class Movie:
 
-    def __init__(self, name, poster, rate):
-        self.name = name
-        self.poster = poster
-        self.rate = rate """
+
 
 
 class Server:
@@ -29,10 +20,7 @@ class Server:
             data_base = open("data_base.txt", 'w')
             data_base.close()
 
-        """self.movies = []
-            with open("movies.txt", 'r') as movies_file:
-                for movie in movies_file.readlines():
-                    self.movies.append(Movie(movie[0], movie[1], movie[2])) """
+        
 
     def listen(self):
         print "Ready to listen..."
@@ -146,16 +134,7 @@ class Server:
                         else:
                             client_socket.send(error)
 
-                """ elif function == "PLAY":
-                    capture = cv2.VideoCapture("movies\\avengers_iw.mp4")
-
-                    while True:
-                        ret, frame = capture.read()
-                        data = cv2.imencode('.jpg', frame)[1].tostring()
-                        print data
-                        sock.sendall("PLAY \r\n" + data)
-                        time.sleep(2)
-                    print "1" """
+              
 
 
 def get_usernames(data_base):
